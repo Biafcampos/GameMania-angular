@@ -1,0 +1,73 @@
+<app-headers></app-headers>
+<main>
+    <section class="banner ">
+        
+        <div class="logon">
+       <form (ngSubmit)="recebeDados()">
+                <input type="email" name="email" id="cadastra-email" placeholder="E-mail" [(ngModel)]="userModel.email"  >
+                <input type="password" name="pws" id="passw" placeholder="Senha" [(ngModel)]="userModel.password"  >
+           <!-- <button type="submit" >Entrar</button>-->
+            <input type="submit" id="envia" value="Entrar"> 
+            </form>
+          </div>
+    
+</section>
+<section class="frase">
+    <div class="container-grid posicao-frase">
+        <p class="conteudo">Confira nossos produtos e aproveite para conversar com nossos
+           vendedores sobre seu jogo preferido</p>
+    </div>
+</section>
+
+      
+        
+          <style>
+            .logon form {
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    padding-top: 16rem; 
+    flex-direction: column;
+            }
+            .logon input[type="email"] {
+    height: 5rem;
+    width: 40rem;  
+    border-radius: 0.2rem; 
+    margin-bottom: 1.25rem;
+    border-style: none; 
+            }
+            .logon input[type="password"] {
+    height: 5rem;
+    width: 40rem;  
+    border-radius: 0.2rem; 
+    border-style: none; 
+            }
+            .logon input[type="email"]::placeholder {
+    color: #B8B3B3;
+    font-size: 1.29rem;
+    font-weight: bold; 
+            }
+            .logon input[type="password"]::placeholder {
+    color: #B8B3B3;
+    font-size: 1.29rem;
+    font-weight: bold; 
+}
+            .logon  button{
+    margin-top: 1rem;
+    width: 10rem;
+    height: 3rem;
+    color: white;
+    background-color: #0B47BA;
+    border-radius: 0.2rem;
+    font-family: sans-serif;
+    border: none;
+
+  
+    
+    
+    
+}
+          </style>
+          <app-footers></app-footers>

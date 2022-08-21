@@ -1,1 +1,423 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+ 
+ 
+ 
+header{
+background-color: #00142d;
+
+
+}
+
+
+#menu {
+   
+    width: 39rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu a {
+    color: #fff;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+#barra {
+    display: none;
+}
+
+.banner {
+    height: 41rem;
+    background-image: url(/assets/nitendo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    
+}
+
+.frase {
+   
+    
+    background-color: #0B47BA;
+    height: 9rem;
+
+    
+}
+.posicao-frase {
+
+    
+    display: flex;
+    height: 80%;
+    justify-content: space-around;
+    align-items: flex-end;
+    
+}
+
+.conteudo {
+    color: #fff;
+    font-size: 2.2rem;
+    font-family: sans-serif;
+  
+
+}
+.ofertas {
+    background-image: url(/assets/controles.svg);
+    height: 70rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.produtos-ofertas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+
+.preco a{
+ display: flex;
+ justify-content: center;
+ text-decoration: none;
+ color: #fff;
+ font-size: 1.29rem;
+ 
+}
+.preco button {
+    background-color: rgb(167, 4, 4);
+}
+
+.produto{
+    width: 20rem;
+    height: 22.5em;
+    background: linear-gradient(100deg, rgba(83, 83, 83, 0.5) 0%, #000000 100%);
+    color: #fff;
+    margin-bottom: 3rem;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0),0px 0px 30px rgb(0, 0, 0);
+}
+
+.produto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.produto img {
+    width: 20rem;
+}
+
+
+.produtos {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5rem;
+}
+.produtos a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    
+    font-size: 1.34rem;
+
+}
+.frase-final {
+    color: #fff;
+    font-size: 2.50rem;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-top: 17rem;
+    
+}
+.copy  {
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    font-size: 1.25rem;
+    font-family: sans-serif;
+}
+.noticia {
+    color:#fff;
+    font-size: 1.60rem;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: flex-end;
+}
+.redes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding-bottom: 2rem ;
+    
+}
+.red {
+    width: 3.30rem;
+    height: 3.30rem;
+    
+}
+.final {
+    background-color: #000;
+    
+}
+.info {
+    font-family: sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25rem;
+
+    
+}
+.conhecendo form {
+    width: 100%;
+    display: flex; 
+    justify-content: flex-end;
+    margin-bottom: 3rem;
+    padding-top: 1.7rem; 
+}
+.conhecendo input[type="email"] {
+    height: 3rem;
+    width: 18rem;  
+    border-radius: 0.2rem; 
+    border-style: none; 
+    
+}
+.conhecendo input[type="email"]::placeholder {
+    color: #B8B3B3;
+    font-weight: bold;
+}
+
+.conhecendo button{
+    width: 10rem;
+    height: 3rem;
+    color: white;
+    background-color: #0B47BA;
+    border-radius: 0.2rem;
+    font-family: sans-serif;
+    border: none;
+    
+    
+}
+#envia {
+    width: 10rem;
+    height: 3rem;
+    color: white;
+    background-color: #0B47BA;
+    border-radius: 0.2rem;
+    font-family: sans-serif;
+    border: none;
+    
+}
+.autor {
+    padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px ){
+    .logo {
+        width: 30rem;
+    }
+    .produtos {
+        width: 30rem;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding-top: 3rem;
+    }
+    .produtos a {
+        padding-bottom: 2rem;
+    }
+    .banner {
+        width: 30rem;
+    }
+    .ofertas {
+        width: 30rem;
+    }
+    .posicao-frase {
+        width: 30rem;
+    }
+    .frase {
+        width: 30rem;
+    }
+    footer {
+        width: 30rem;
+    }
+  
+}
+
+@media screen and (max-width: 1100px ){
+ 
+    .cabecalho {
+        position: relative;
+    }
+    #menu {
+        display: none;
+        position: absolute;
+        top: 8.20rem;
+        right: 0%;
+        height: 27rem;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: #00142d;
+        align-items: center;
+        
+
+    }
+    #barra {
+        display: inline-block;
+    }
+    
+}
+@media screen and (max-width: 848px ){ 
+
+    .logo {
+        width: 30rem;
+    }
+    .produtos {
+        width: 30rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        padding-top: 3rem;
+    }
+    .produtos a {
+        padding-bottom: 2rem;
+    }
+    .banner {
+        width: 53rem;
+    }
+    .ofertas {
+        width: 53rem;
+        height: 89rem;
+    }
+    .posicao-frase {
+        width: 50rem;
+    }
+    .frase {
+        height: 9.5rem;
+        width: 53rem;
+    }
+    .frase-final {
+        font-size: 2rem;
+        display: flex;
+        text-align: center;
+    }
+    footer {
+        width: 53rem;
+    }
+    .cabecalho {
+        width: 53rem;
+    }
+}
+
+@media screen and (max-width: 450px ){ 
+
+    .logo {
+        width: 20rem;
+    }
+    .produtos {
+        width: 20rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        padding-top: 3rem;
+    }
+    .produtos a {
+        padding-bottom: 2rem;
+    }
+    .banner {
+        width: 38.5rem;
+    }
+    .ofertas {
+        width: 38.5rem;
+        height: 89rem;
+    }
+    .posicao-frase {
+        width: 38.5rem;
+    }
+    .frase {
+        height: 9.5rem;
+        width: 38.5rem;
+    }
+    .frase-final {
+        font-size: 2rem;
+        display: flex;
+        text-align: center;
+    }
+    footer {
+        width: 38.5rem;
+    }
+    .cabecalho {
+        width: 38.5rem;
+    }
+    header {
+        width: 38.5rem;
+    }
+}
+
+@media screen and (max-width: 400px ){ 
+
+    .logo {
+        width: 10rem;
+    }
+    .produtos {
+        width: 20rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        padding-top: 3rem;
+    }
+    .produtos a {
+        padding-bottom: 2rem;
+    }
+    .banner {
+        width: 10rem;
+    }
+    .ofertas {
+        width: 5rem;
+        height: 89rem;
+    }
+    .posicao-frase {
+        width: 38.5rem;
+    }
+    .frase {
+        height: 9.5rem;
+        width: 38.5rem;
+    }
+    .frase-final {
+        font-size: 2rem;
+        display: flex;
+        text-align: center;
+    }
+    footer {
+        width: 38.5rem;
+    }
+    .cabecalho {
+        width: 5rem;
+    }
+    header {
+        width: 5rem;
+    }
+}
