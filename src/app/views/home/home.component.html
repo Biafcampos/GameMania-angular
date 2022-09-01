@@ -53,13 +53,30 @@
 
         
         </div>
-        <div class="sobre">
-        <h2 class="frase-final">Somos a game mania e estamos aqui para inspirar e inovar a sua realidade com tecnologia
-            </h2>
-            
-           
-        </div>
+        
        
     </section>
-
-</main>
+  </main>
+    <div class="fim">
+    <div class="sobre">
+      <h2 class="frase-final">Somos a game mania e estamos aqui para inspirar e inovar a sua realidade com tecnologia
+          </h2>
+          
+         
+      </div>
+  
+ 
+   <section class="noticias">
+      <div class="container-grid noticias">
+          <div class="bloco-noticias">
+              <h2>Notícias</h2>
+              <div id="espace-noticias" class="content-news">
+                  <div *ngFor="let noticia of listaNoticias" class="cardnews">
+                      <div class="texto-card">
+                          <h3>{{ noticiaForm.titulo}}</h3>
+                          <p>{{ noticiaForm.descricao}}</p>
+                          <a >Comprar</a>
+                      </div>                    
+                  </div>
+                </div>
+                

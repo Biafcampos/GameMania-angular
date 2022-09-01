@@ -414,8 +414,11 @@
 
 .bloco-noticias h2 {
     font-size: 25px;
-}
 
+}
+.bloco-noticias{
+    background-color: #020e1b;
+}
 .content-news{
     display: flex;
     flex-wrap: wrap;
@@ -423,4 +426,6 @@
     align-items: center;
     margin-top: 25px;
 }
-
+.fim {
+    background-color: #020e1b;
+}

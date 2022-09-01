@@ -7,12 +7,6 @@
       "id": 1
     },
     {
-      "email": "Ana@email.com",
-      "password": "12345",
-      "nome": "Ana",
-      "id": 2
-    },
-    {
       "email": "Leonardo@email.com",
       "password": "12345",
       "nome": "Leonardo",
@@ -26,9 +20,35 @@
     },
     {
       "email": "Marcio@email.com",
-      "password": "$2a$10$fhtvIB3f51XbZRp0Wd4nvOptsdGBgpk89RJC8uaa3nRv9ZSWOmILG",
+      "password": "$2a$10$iatjxdcxGIbEf7YtH1YgmejLUkIV/wPA3FzDtVlAcS0rupBIRQEl.",
       "nome": "Marcio",
       "id": 5
+    },
+    {
+      "email": "marcio@email.com",
+      "password": "$2a$10$quVXUNuNTckPCju4/LKcWerljRB49zcp5NGhLvzCk9m5BIj1YlFmG",
+      "id": 6
+    },
+    {
+      "email": "joana@email.com",
+      "password": "$2a$10$1Mw3DSKlQFFMZShe1nHexO13OZ8DS7oy1H6fZyQ27.HBSDh4UEa7O",
+      "id": 7
+    },
+    {
+      "email": "maria@email.com",
+      "password": "$2a$10$/bw7RO4yV/otsBMEqXHpjOKmh/e573rJbVE6e1m.SA8zPAHqQkaWm",
+      "id": 8
+    },
+    {
+      "email": "gabriel@email.com",
+      "password": "$2a$10$3ZiJgDLY/uLlw8oQMSP9HOVMVVPedurC.PG5A7tDxFDwDfiN09Wli",
+      "id": 9
+    },
+    {
+      "email": "FernandaSilva@email.com",
+      "password": "$2a$10$dASa2np0LSXlVWK98dA7t.xZOP8j4j2ILMhf3B3tZLV4ztX/veFSm",
+      "nome": "Fernanda",
+      "id": 10
     }
   ],
   "noticias": [

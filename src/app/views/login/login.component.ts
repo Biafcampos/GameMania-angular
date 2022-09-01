@@ -15,22 +15,24 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  userModel= new User()
-
-  recebeDados(){
-    console.log(this.userModel)
-  } 
+ 
   UserModel = new User();
 
   mensagem = "";
 
   onSubmit() {
     this.loginService.login(this.UserModel).subscribe( (response) => {
-      this.mensagem = "Login com sucesso!";
+      console.log("Login com sucesso!")
+      
       this.router.navigateByUrl("/");
+      this.mensagem = "Login com sucesso!";
+      console.log(this.UserModel);
+      
     }, (error) => {
-      console.log(error)
+      console.log("Email ou senha incorretas")
       this.mensagem = error.error;
+     this.mensagem = "Email ou senha incorretas";
+
     } )
   }
 }
