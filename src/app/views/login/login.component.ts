@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from 'src/app/models/user';
+import { Router } from '@angular/router';
+import { LoginService } from 'src/app/services/login.service';
 
 @Component({
   selector: 'app-login',
@@ -8,7 +10,7 @@ import { User } from 'src/app/models/user';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router, private loginService: LoginService) { }
 
   ngOnInit(): void {
   }
@@ -17,6 +19,18 @@ export class LoginComponent implements OnInit {
 
   recebeDados(){
     console.log(this.userModel)
-  }
+  } 
+  UserModel = new User();
 
+  mensagem = "";
+
+  onSubmit() {
+    this.loginService.login(this.UserModel).subscribe( (response) => {
+      this.mensagem = "Login com sucesso!";
+      this.router.navigateByUrl("/");
+    }, (error) => {
+      console.log(error)
+      this.mensagem = error.error;
+    } )
+  }
 }

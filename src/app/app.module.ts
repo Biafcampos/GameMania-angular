@@ -11,6 +11,7 @@ import { ProdutosComponent } from './views/produtos/produtos.component';
 import { HeadersComponent } from './views/headers/headers.component';
 import { FootersComponent } from './views/footers/footers.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -23,12 +24,14 @@ import { FormsModule } from '@angular/forms';
     HeadersComponent,
     FootersComponent
     
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     FormsModule,
+    HttpClientModule
     
   ],
   providers: [],

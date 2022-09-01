@@ -396,3 +396,31 @@
         width: 5rem;
     }
 }
+.secao-noticias {
+    background-color: #1E1C21;
+    padding: 30px 0 ;
+}
+
+.secao-noticias .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bloco-noticias{
+    width: 70%;
+    height: 90%;
+    color: white;
+}
+
+.bloco-noticias h2 {
+    font-size: 25px;
+}
+
+.content-news{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+

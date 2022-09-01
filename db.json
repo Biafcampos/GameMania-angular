@@ -1,0 +1,51 @@
+{
+  "users": [
+    {
+      "email": "Pedro@email.com",
+      "password": "12345",
+      "nome": "Pedro",
+      "id": 1
+    },
+    {
+      "email": "Ana@email.com",
+      "password": "12345",
+      "nome": "Ana",
+      "id": 2
+    },
+    {
+      "email": "Leonardo@email.com",
+      "password": "12345",
+      "nome": "Leonardo",
+      "id": 3
+    },
+    {
+      "email": "Maria@email.com",
+      "password": "12345",
+      "nome": "Maria",
+      "id": 4
+    },
+    {
+      "email": "Marcio@email.com",
+      "password": "$2a$10$fhtvIB3f51XbZRp0Wd4nvOptsdGBgpk89RJC8uaa3nRv9ZSWOmILG",
+      "nome": "Marcio",
+      "id": 5
+    }
+  ],
+  "noticias": [
+    {
+      "id": 1,
+      "titulo": "Avaí subiu para a série A",
+      "descricao": "Avaí subiu para a série A do campeonato brasileiro"
+    },
+    {
+      "id": 2,
+      "titulo": "Black Friday derruba o preco do Disco de Freio",
+      "descricao": "Black Friday vende pela metade do dobro, o Disco de Freio"
+    },
+    {
+      "id": 3,
+      "titulo": "Renato Gaucho demitido",
+      "descricao": "Renato Gaucho foi demitido do Flamengo após jogo contra o Palmeiras"
+    }
+  ]
+}
