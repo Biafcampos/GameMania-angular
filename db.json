@@ -2,31 +2,26 @@
   "users": [
     {
       "email": "Pedro@email.com",
-      "password": "12345",
+      "password": "$2a$10$iljBvwD6GkZsII1M4p.LX.sLDGhAHqM.mAXQkqRycTZ/ML1KGSkXy",
       "nome": "Pedro",
       "id": 1
     },
     {
       "email": "Leonardo@email.com",
-      "password": "12345",
+      "password": "$2a$10$w/TJEL1eVTBVvdvHxslhcOQ2Z3RwVWAb1mwqfomzexm.LvG5xyE/.",
       "nome": "Leonardo",
       "id": 3
     },
     {
       "email": "Maria@email.com",
-      "password": "12345",
+      "password": "$2a$10$IpI.LuNJzgw.N2k4Pfd5NeL5VWQX3ODXofNE5iBuCmU2z/1O734uW",
       "nome": "Maria",
       "id": 4
     },
     {
-      "email": "Marcio@email.com",
-      "password": "$2a$10$iatjxdcxGIbEf7YtH1YgmejLUkIV/wPA3FzDtVlAcS0rupBIRQEl.",
-      "nome": "Marcio",
-      "id": 5
-    },
-    {
       "email": "marcio@email.com",
-      "password": "$2a$10$quVXUNuNTckPCju4/LKcWerljRB49zcp5NGhLvzCk9m5BIj1YlFmG",
+      "password": "$2a$10$k1QV4yZtOFS/x0bmVuI5SepJGPoqm75Hs8v/x9YcU1PIyuwMhVFZK",
+      "nome": "marcio",
       "id": 6
     },
     {
@@ -49,6 +44,12 @@
       "password": "$2a$10$dASa2np0LSXlVWK98dA7t.xZOP8j4j2ILMhf3B3tZLV4ztX/veFSm",
       "nome": "Fernanda",
       "id": 10
+    },
+    {
+      "email": "Luisa@email.com",
+      "password": "$2a$10$HnY8QkXs.WN3.fL6oLMTAOVHoF3SHWEmPeeuF.3Wt1YTSyqfQKQcO",
+      "nome": "Luisa",
+      "id": 2
     }
   ],
   "noticias": [
