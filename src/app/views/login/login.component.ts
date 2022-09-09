@@ -20,25 +20,44 @@ export class LoginComponent implements OnInit {
 
   mensagem = "";
 
+  
   onSubmit() {
-    this.loginService.login(this.UserModel).subscribe( (response) => {
+        
+const listapalavras: string[] = ["select", "from", "drop", "or", "having", "group", "by", "insert", "exec ",  "--", "#", "*"]
+
+
+listapalavras.forEach( palavra => {
+ // if(this.UserModel.email.toLowerCase().includes(palavra)) {
+    
+    this.mensagem = "Dados invalidos"
+   
+    return;
+  }
+  
+//}
+),
+
+this.loginService.login(this.UserModel).subscribe( (response) => {
       console.log("Login com sucesso!")
       console.log("O Status code é: ", response.status)
       console.log("o token de permissão é: ", response.body.accessToken)
 
       this.mensagem = "Bem vindo " + response.body.user.nome 
       console.log(this.mensagem)
-     // this.router.navigateByUrl("/");
-      //this.mensagem = "Login com sucesso!";
+      this.router.navigateByUrl("/");
+      this.mensagem = "Login com sucesso!";
       console.log(this.UserModel);
       
-    }, (responseError) => {
+    }, 
+
+
+  (responseError) => {
       console.log("responseErro", responseError)
       this.mensagem = responseError.error
       
      this.mensagem = "Email ou senha incorretas tente novamente";
 
-    } )
+    } );
+
   }
-  
 }
