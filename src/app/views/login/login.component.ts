@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit {
   
   onSubmit() {
         
-const listapalavras: string[] = ["select", "from", "drop", "or", "having", "group", "by", "insert", "exec ",  "--", "#", "*"]
+  const listapalavras: string[] = ["select", "from", "drop", "or", "having", "group", "by", "insert", "exec ",  "--", "#", "*"]
 
 
 listapalavras.forEach( palavra => {
@@ -37,14 +37,15 @@ listapalavras.forEach( palavra => {
 //}
 ),
 
-this.loginService.login(this.UserModel).subscribe( (response) => {
-      console.log("Login com sucesso!")
+this.loginService.login(this.UserModel).subscribe((response) => {
+      console.log("response: ", response)
+    //  console.log("Login com sucesso!")
       console.log("O Status code é: ", response.status)
       console.log("o token de permissão é: ", response.body.accessToken)
 
       this.mensagem = "Bem vindo " + response.body.user.nome 
       console.log(this.mensagem)
-      this.router.navigateByUrl("/");
+     // this.router.navigateByUrl("/");
       this.mensagem = "Login com sucesso!";
       console.log(this.UserModel);
       
@@ -53,9 +54,28 @@ this.loginService.login(this.UserModel).subscribe( (response) => {
 
   (responseError) => {
       console.log("responseErro", responseError)
-      this.mensagem = responseError.error
+      //console.log("responseErro.error: " this.mensagem)
+      //this.mensagem = responseError.error
+    
+      if(responseError.error == "Cannot find user"){
+        this.mensagem = "Usuario não encontrado"
+        
+      }
+      if(responseError.error == "Incorrect password"){
+        this.mensagem = "Senha Incorreta, digite novamente"
+        
+      }
+      if(responseError.error == "Password is too short"){
+        this.mensagem = "Senha muito curta"
+        
+      }
+      if(responseError.error == "Email format is invalid"){
+        this.mensagem = "Formato de Email invalido, tente novamente"
+        
+      }
+     
       
-     this.mensagem = "Email ou senha incorretas tente novamente";
+    // this.mensagem = "Email ou senha incorretas tente novamente";
 
     } );
 
