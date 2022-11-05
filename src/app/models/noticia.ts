@@ -5,5 +5,4 @@ export class Noticia {
     descricao?: string
 
     ){}
-
 }
